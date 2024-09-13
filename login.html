@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie - BMW Sklep</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="logo.png" alt="Logo BMW" class="logo">
+            </a>
+            <div class="nav-center">
+                <a href="index.html"><b>Strona Główna</b></a>
+                <a href="all_models.html"><b>Wszystkie Modele</b></a>
+            </div>
+            <div class="nav-right">
+                <a href="cart.html" id="cart-link"><b>Koszyk</b></a>
+            </div>
+        </nav>
+    </header>
+    <?php include 'header.php'; ?>
+    <section id="login-form">
+        <form action="login.php" method="POST">
+            <label for="username">Email lub nazwa użytkownika</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Zaloguj się</button><br><br><br>
+            Nie masz jeszcze BMW ID? <br> Zarejestruj się <a href="register.html"><b>tutaj. </b></a>
+        </form>
+    </section>
+    <footer class="footer" style="color: white; background-color: #333; text-align: center; padding: 20px; position: fixed; bottom: 0; width: 100%;">
+        © 2024 BMW Sklep. Wszelkie prawa zastrzeżone.
+    </footer>
+    
+</body>
+</html>

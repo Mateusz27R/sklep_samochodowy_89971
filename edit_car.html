@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edytuj Samochód</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="logo.png" alt="Logo BMW" class="logo">
+            </a>
+            <div class="nav-center">
+                <a href="index.html"><b>Strona Główna</b></a>
+                <a href="all_models.html"><b>Wszystkie Modele</b></a>
+            </div>
+            <div class="nav-right">
+                <a href="cart.html" id="cart-link"><b>Koszyk</b></a>
+            </div>
+        </nav>
+    </header>
+    <section id="edit-car">
+        <h2>Edytuj Samochód</h2>
+        <form id="edit-car-form">
+            <label for="editModel">Nazwa modelu:</label>
+            <input type="text" id="editModel" name="model" required>
+
+            <label for="editPrice">Cena:</label>
+            <input type="number" id="editPrice" name="price" required>
+
+            <label for="editCapacity">Pojemność:</label>
+            <input type="text" id="editCapacity" name="capacity" required>
+
+            <label for="editFuelType">Typ paliwa:</label>
+            <input type="text" id="editFuelType" name="fuel_type" required>
+
+            <button type="button" id="update-car-button">Zaktualizuj samochód</button>
+            <button type="button"><a href="admin.html"> Powrót do okna Admina</a> </button>
+        </form>
+        <p id="statusMessage"></p>
+    </section>
+
+    <script src="script.js"></script>
+    <footer class="footer" style="color: white; background-color: #333; text-align: center; padding: 20px; position: fixed; bottom: 0; width: 100%;">
+        © 2024 BMW Sklep. Wszelkie prawa zastrzeżone.
+    </footer>
+</body>
+</html>

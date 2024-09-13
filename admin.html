@@ -1,0 +1,65 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel administracyjny - BMW Sklep</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="logo.png" alt="Logo BMW" class="logo">
+            </a>
+            <div class="nav-center">
+                <a href="index.html"><b>Strona Główna</b></a>
+                <a href="all_models.html"><b>Wszystkie Modele</b></a>
+            </div>
+            <div class="nav-right">
+                <a href="cart.html" id="cart-link"><b>Koszyk</b></a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="admin-panel">
+        <h2>Zarządzanie samochodami</h2>
+
+        <!-- Formularz dodawania nowego modelu -->
+        <form id="add-car-form" method="POST" action="add_car.php" enctype="multipart/form-data">
+            <label for="car-name">Nazwa modelu:</label>
+            <input type="text" id="car-name" name="model" required>
+
+            <label for="car-price">Cena:</label>
+            <input type="number" id="car-price" name="price" required>
+
+            <label for="car-image">Zdjęcie:</label>
+            <input type="file" id="car-image" name="image" accept="image/*">
+
+            <label for="car-capacity">Pojemność:</label>
+            <input type="text" id="car-capacity" name="capacity" required>
+
+            <label for="car-fuel">Typ paliwa:</label>
+            <input type="text" id="car-fuel" name="fuel" required>
+
+            <button type="submit" class="m-package-button">Dodaj Samochód</button>
+        </form>
+
+        <!-- Wyszukiwanie samochodu -->
+         <div>
+        <input type="text" id="searchModel" placeholder="Wpisz nazwę modelu">
+        <button onclick="searchCar()">Wyszukaj</button>
+         </div>
+        <div id="search-result"></div>
+        
+        <!-- Lista istniejących samochodów -->
+        <div id="car-list-admin">
+            <h3>Istniejące modele</h3>
+            <div id="admin-cars-container"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+</body>
+</html>

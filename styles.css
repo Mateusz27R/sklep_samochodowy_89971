@@ -1,0 +1,298 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100px; 
+    width: auto;   
+    margin-right: 20px;
+}
+
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-center a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-right a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-right a:hover {
+    color: #ddd;
+}
+
+/* Ogólne style dla reszty strony */
+
+h1, h2, h3, h4 {
+    margin: 10px 0;
+}
+
+section {
+    padding: 20px;
+}
+
+#car-list, #admin-panel {
+    margin: 20px 0;
+}
+
+.car-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-image {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* Banner Styles */
+#banner {
+    position: relative;
+    height: 500px; /* Zwiększona wysokość banera */
+    background-color: #000;
+}
+
+.banner-image {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.banner-text {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 80%;
+}
+
+/* Stylizacja sekcji featured images */
+#featured-images {
+    margin-top: 20px;
+}
+
+.featured-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-text.reverse {
+    flex-direction: row-reverse;
+}
+
+.image {
+    width: 100%; /* Zwiększa szerokość do pełnej szerokości kontenera */
+    height: 600px; /* Zwiększa wysokość zdjęcia */
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    width: 50%; /* Zwiększa szerokość tekstu obok obrazu */
+}
+
+.text h3 {
+    font-style: oblique;
+    text-shadow: #0000ff;
+    margin: 0;
+    color: #333;
+}
+
+.text p {
+    color: #555;
+}
+
+
+
+
+.m-package-button {
+    background: linear-gradient(90deg, #ff0000 0%, #0000ff 50%, #00274d 100%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+}
+
+.m-package-button:hover {
+    background: linear-gradient(90deg, #ff6666 0%, #6666ff 50%, #004080 100%);
+}
+#login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Wysokość pełna okna przeglądarki */
+    background-color: #f4f4f4; /* Tło strony */
+}
+
+#login-form form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Maksymalna szerokość formularza */
+    text-align: center;
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+}
+
+#login-form input[type="email"]{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login-form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form button:hover {
+    background-color: #444;
+}
+/* Style dla formularza rejestracji */
+#register-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Wysokość 80% widoku */
+    background-color: #f4f4f4;
+}
+
+#register-form form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Maksymalna szerokość formularza */
+}
+
+#register-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+#register-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+#register-form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#register-form button {
+    width: 90%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#register-form button:hover {
+    background-color: #444;
+}
